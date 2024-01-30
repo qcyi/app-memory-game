@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <div id="tablero">
+        <div class="area-tarjeta">
+            <div class="tarjeta">
+                <div class="cara trasera">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <div class="cara frontal">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <button class="nuevoJuego" onclick="generarTablero()">
+        Nuevo Juego
+    </button>
+
+    <footer>
+        <div>
+            <model-viewer src="duck_run.glb" autoplay ar ar-modes="webxr scene-viewer" shadow-intensity="1"
+                camera-controls touch-action="pan-y"></model-viewer>
+        </div>
+    </footer>
+</body>
+
+</html>
